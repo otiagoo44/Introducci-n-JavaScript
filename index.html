@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro JS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="text-primary">Introducción a JavaScript</h1>
+  <script type="text/JavaScript">
+        document.write("Escrito desde JS.");
+        /* Esto es un comentario en JS*/
+    </script>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit placeat iure ullam quidem nulla quis earum quasi
+    vero suscipit, molestiae iste tempora, mollitia harum ipsum velit, porro sed nobis hic?</p>
+  <script type="text/javascript">
+    document.write("<br>");
+  </script>
+  <p class="tipografia2" id="idParrafo">
+    Buenas, que tal. ._.
+  </p>
+
+  <script type="text/javascript">
+    document.write("Este texto debe aparecer en la parte superior");
+    document.write("<br>");
+    document.write("Esto debe aparecer abajo.");
+  </script>
+
+  <h2>Prueba de Js con botones</h2>
+  <button class="btn btn-primary" type="button"
+   onclick="saludo()">
+    Haz un click aquí!
+  </button>
+
+  <script>
+    function saludo(){
+      /*window.alert('Hola desde AlertJs');*/
+      document.getElementById("idParrafo").innerHTML = "Sorpresa";
+      console.log('El elemento p fue modificado');
+    }
+  </script>
+
+</body>
+
+</html>
