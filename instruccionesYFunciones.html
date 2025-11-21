@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTRUCCIONES Y FUNCIONES</title>
+</head>
+<body>
+    <h1>INSTRUCCIONES Y FUNCIONES EN JAVASCRIPT</h1>
+    <script>
+        let num1;
+        let num2;
+        num1 = prompt("DAME EL PRIMER VALOR: ", "");
+        num2 = prompt("DAME EL SEGUNDO VALOR: ", "");
+        suma = parseInt(num1) + parseInt(num2);
+        document.write("La  suma de ambos numeros es ");
+        document.write(suma);
+        console.log("Num1 es de tipo "  + typeof(num1));
+        console.log("Num1 es de tipo "  + typeof(num2));
+        console.log("Suma es de tipo: " + typeof(suma));
+
+        let cadena = "Esto es un string";
+        let numero = 123;
+        let booleano = true;
+        let objeto = {};
+        let arreglo = [];
+        let nulo = null;
+        let indefinido = undefined;
+
+        console.log("Cadena es de tipo " + typeof(cadena))
+        console.log("Numero es de tipo " + typeof(numero))
+        console.log("Booleano es de tipo " + typeof(booleano))
+        console.log("Objeto es de tipo " + typeof(objeto))
+        console.log("Arreglo es de tipo " + typeof(arreglo))
+        console.log("Nulo es de tipo " + typeof(null))
+        console.log("Indefinido es de tipo " + typeof(undefined))
+        
+    </script>
+</body>
+</html>
