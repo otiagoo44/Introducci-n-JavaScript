@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VARIABLES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VARIABLE</title>
 </head>
+
 <body>
-    <script>
-        /*var let const*/
-        let nombre = 'Fiorella';
-        let edad = 16;
-        document.write(nombre);
-        document.write('<br>');
-        document.write(edad);
-    </script>
+  <script>
+    /*var let cons*/
+    let nombre = 'Fiorella';
+    let edad = 16;
+    document.write(nombre);
+    document.write('<br>');
+    document.write(edad);
+
+    /*
+    para introducir datos por parte del usuario se puede utilizar el parametro 'prompt' su sintaxis es la siguiente
+    let variableEjemplo = window.prompt(mensaje,valorPorDefecto);
+    */
+   nombre = window.prompt('INGRESA TU PRIMER NOMBRE:', '')
+   document.write('<br>');
+   edad = window.prompt('INGRESA TU EDAD: ', '')
+   document.write('<br>');
+   document.write('Mucho gusto', nombre);
+   document.write('<br>');
+   document.write('Me sorprende que tengas', edad, 'años de edad');
+
+   /*
+   para solicitar confirmaciones al usuario, se puede usar el parametro 'confirm',
+   su sintaxis es la siguiente:
+   let confirmacion = window.confirm(mensaje);
+   */
+  
+   let relacion = 'novia'
+   let mensaje = 'soy fulano, quieres ser mi' + relacion + '?';
+   let confirmacion = window.confirm('quieres ser mi tilina?'); 
+   console.log(confirmacion);
+   if(confirmacion){
+    document.write(nombre, ' es un gusto que podamos ser', relacion + 's');
+   }else{
+    document.write(nombre, ', es una lastima que no se haya concretado lo nuestro </3');
+   }
+
+   /*
+   TIPOS DE DATOS EN JS
+    - Number
+    - String
+    - Boolean
+    - Valores especiales: null y undefined
+    - Symbol
+    - BigInt (para valores que superen el tamaño de Number)
+    - Object
+   */
+  </script>
 </body>
+
 </html>
